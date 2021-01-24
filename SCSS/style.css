@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Nunito&family=Potta+One&display=swap");
+::-webkit-scrollbar {
+  width: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #173e50;
+}
+
+body a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  z-index: 5;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: transparent;
+  position: fixed;
+  -webkit-backdrop-filter: blur(0.25rem);
+          backdrop-filter: blur(0.25rem);
+  border-bottom: 0.2rem solid #ffffff;
+}
+
+body nav #h2 {
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #ffffff;
+  padding-right: 2rem;
+  cursor: pointer;
+}
+
+body nav span {
+  font-size: 1.5rem;
+}
+
+body nav #menu {
+  position: absolute;
+  right: 1.5rem;
+  padding-top: 0.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0.3rem;
+}
+
+body nav #menu a {
+  margin-left: 1rem;
+  padding: 0.4rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+body nav #menu a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  background-color: #5858586b;
+}
+
+body nav #menu a:active {
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  background-color: #5858586b;
+}
+
+@media (max-width: 730px) {
+  body nav #menu {
+    display: none;
+  }
+}
+
+body nav #menu2 {
+  position: fixed;
+  right: -3rem;
+  top: 1rem;
+}
+
+body nav #menu2 i {
+  font-size: 2rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media (max-width: 730px) {
+  body nav #menu2 {
+    right: 1.5rem;
+  }
+}
+
+body #menu1 {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  z-index: 6;
+  top: 0;
+  left: -100%;
+  font-size: 2.5rem;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  overflow: hidden;
+  border-right: 0.2rem solid #ffffff;
+}
+
+body #menu1 i {
+  position: absolute;
+  color: #ffffff;
+  font-size: 3rem;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+body #menu1 a {
+  padding: 0 1rem 0 1rem;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+body #menu1 a:hover {
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background-color: #5858586b;
+}
+
+body #menu1 a:active {
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  background-color: #5858586b;
+}
+
+body #home {
+  background-image: url("../IMAGES/home.jpg");
+  background-attachment: fixed;
+  padding-top: 5rem;
+  background-size: cover;
+  z-index: 4;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  -webkit-clip-path: ellipse(100% 55% at 48% 44%);
+          clip-path: ellipse(100% 55% at 48% 44%);
+}
+
+body #home #cir {
+  border-radius: 50%;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+  -webkit-backdrop-filter: blur(0.5rem);
+          backdrop-filter: blur(0.5rem);
+  height: 80vw;
+  width: 80vw;
+  position: absolute;
+  background-color: transparent;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 730px) {
+  body #home #cir {
+    height: 80vh;
+    width: 80vh;
+  }
+}
+
+body #home #cir h1 {
+  font-size: 10rem;
+  text-align: center;
+}
+
+body #gc {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+body #gc h1 {
+  z-index: 4;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 0.2rem solid #969696;
+  border-top: 0.2rem solid #969696;
+}
+
+body #gc #wave {
+  position: absolute;
+  z-index: 1;
+  width: 1000px;
+  height: 1025px;
+  top: 100.5%;
+  left: 30%;
+  margin-left: -600px;
+  margin-top: 10rem;
+  border-radius: 35%;
+  background: #979797bf;
+  -webkit-animation: wave 15s infinite linear;
+          animation: wave 15s infinite linear;
+}
+
+@-webkit-keyframes wave {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes wave {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+body #gc #gallery {
+  padding-top: 5rem;
+  z-index: 4;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+body #gc #contact-us {
+  padding-top: 5rem;
+  z-index: 4;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+body #about-us {
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  background-color: #0d242e;
+}
+
+body #about-us h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-top: 15rem;
+  padding: 0.5rem;
+  border-bottom: 0.2rem solid #969696;
+  border-top: 0.2rem solid #969696;
+}
+/*# sourceMappingURL=style.css.map */
