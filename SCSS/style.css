@@ -169,8 +169,9 @@ body #home {
   padding-top: 5rem;
   background-size: cover;
   z-index: 4;
+  margin: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   -webkit-clip-path: ellipse(100% 55% at 48% 44%);
           clip-path: ellipse(100% 55% at 48% 44%);
@@ -238,8 +239,7 @@ body #gc #wave {
   width: 1000px;
   height: 1025px;
   top: 100.5%;
-  left: 30%;
-  margin-left: -600px;
+  right: 30%;
   margin-top: 10rem;
   border-radius: 35%;
   background: #979797bf;
