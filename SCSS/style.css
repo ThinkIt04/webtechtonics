@@ -16,7 +16,6 @@ html body {
   overflow-x: hidden;
   background-color: #173e50;
   width: 100vw;
-  height: 390vh;
 }
 
 html body a {
@@ -225,8 +224,8 @@ html body #home #cir h1 {
 
 html body #gc {
   overflow: hidden;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100%;
 }
 
 html body #gc h1 {
@@ -244,8 +243,8 @@ html body #gc #wave {
   z-index: 1;
   width: 1000px;
   height: 1025px;
-  top: 100.5%;
-  right: 30%;
+  top: 115%;
+  right: 10%;
   margin-top: 10rem;
   border-radius: 35%;
   background: #979797bf;
@@ -280,8 +279,79 @@ html body #gc #gallery {
   z-index: 4;
   position: relative;
   width: 100%;
-  height: 100vh;
   background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body #gc #gallery .wlink {
+  border-radius: 0.5rem;
+  background-color: #ffffff6b;
+  margin: 4rem 4rem 0 4rem;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding: 2rem;
+}
+
+@media (min-width: 475px) {
+  html body #gc #gallery .wlink {
+    min-width: 30rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html body #gc #gallery .wlink {
+    min-width: 50rem;
+  }
+}
+
+html body #gc #gallery .wlink:hover {
+  margin-left: 3.9rem;
+  background-color: #ffffffab;
+  -webkit-box-shadow: 0.2rem 0.2rem 0rem #808080;
+          box-shadow: 0.2rem 0.2rem 0rem #808080;
+}
+
+html body #gc #gallery .wlink a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #4e4e4e;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+html body #gc #gallery .wlink a img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 0.5rem;
+  height: 7.5rem;
+  width: 7.5rem;
 }
 
 html body #gc #contact-us {
@@ -289,13 +359,182 @@ html body #gc #contact-us {
   z-index: 4;
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: transparent;
+}
+
+html body #gc #contact-us #comment {
+  border-radius: 0.5rem;
+  background-color: #ffffff6b;
+  margin: 2rem;
+  color: #4e4e4e;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  padding: 2rem;
+}
+
+@media (min-width: 475px) {
+  html body #gc #contact-us #comment {
+    min-width: 30rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html body #gc #contact-us #comment {
+    min-width: 50rem;
+  }
+}
+
+html body #gc #contact-us #comment:hover {
+  margin-left: 1.9rem;
+  background-color: #ffffffab;
+  -webkit-box-shadow: 0.2rem 0.2rem 0rem #808080;
+          box-shadow: 0.2rem 0.2rem 0rem #808080;
+}
+
+html body #gc #contact-us #comment form {
+  height: 100%;
+  width: 100%;
+}
+
+html body #gc #contact-us #comment form fieldset {
+  border: 0.2rem solid #969696;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+html body #gc #contact-us #comment form fieldset legend {
+  width: 9ch;
+  padding-left: 1ch;
+  margin-left: 2ch;
+}
+
+html body #gc #contact-us #comment form fieldset input, html body #gc #contact-us #comment form fieldset textarea {
+  outline: none;
+}
+
+html body #gc #contact-us #comment form fieldset .fill {
+  width: 100%;
+  height: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+html body #gc #contact-us #comment form fieldset .fill .enter {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  background: none;
+  width: 100%;
+  padding-left: 1rem;
+  color: #333333;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  border: none;
+  border-bottom: 3px solid gray;
+}
+
+html body #gc #contact-us #comment form fieldset .fill .enter:hover {
+  border-bottom: 3px solid #173e50;
+}
+
+html body #gc #contact-us #comment form fieldset .fill .enter:focus {
+  border-bottom: 3px solid #173e50;
+}
+
+html body #gc #contact-us #comment form fieldset .fill .enter:focus ~ label {
+  margin-top: -4rem;
+}
+
+html body #gc #contact-us #comment form fieldset .fill .enter:valid {
+  border-bottom: 3px solid #173e50;
+}
+
+html body #gc #contact-us #comment form fieldset .fill .enter:valid ~ label {
+  margin-top: -4rem;
+}
+
+html body #gc #contact-us #comment form fieldset .fill .labl {
+  position: absolute;
+  margin-left: 0.25rem;
+  margin-top: -2rem;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  color: #4e4e4e;
+}
+
+html body #gc #contact-us #comment form fieldset .fill #rates {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+html body #gc #contact-us #comment form fieldset .fill #rat {
+  position: absolute;
+  margin: 0.5rem 0 0 0.25rem;
+}
+
+html body #gc #contact-us #comment form fieldset .fill input[type=radio] {
+  height: 0rem;
+  width: 0rem;
+  margin: 0 0 0 0.5rem;
+}
+
+html body #gc #contact-us #comment form fieldset .fill input[type=radio]:checked ~ .rat {
+  color: goldenrod;
+}
+
+html body #gc #contact-us #comment form fieldset .fill input[type=radio]:hover ~ .rat {
+  color: goldenrod;
+}
+
+html body #gc #contact-us #comment form fieldset .fill .rat {
+  font-size: 2rem;
+  color: gray;
+  background-color: transparent;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+html body #gc #contact-us #comment form fieldset button {
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem 1rem 0 1rem;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  border: none;
+  background-color: #277092;
+}
+
+html body #gc #contact-us #comment form fieldset button:active {
+  background-color: #2b90be;
+}
+
+html body #gc #contact-us #comment form fieldset button:hover {
+  background-color: #2b90be;
 }
 
 html body #about-us {
   width: 100%;
   height: 90vh;
+  z-index: 4;
   overflow: hidden;
   background-color: #0d242e;
 }

@@ -14,7 +14,6 @@ html{
         overflow-x: hidden;
         background-color: #173e50;
         width: 100vw;
-        height: 390vh;
         a{
             text-decoration: none;
             color: #ffffff;
@@ -162,8 +161,8 @@ html{
         }
         #gc{
             overflow: hidden;
-            width: 100%;
-            height: auto;
+            width: 100vw;
+            height: 100%;
             h1{
                 z-index: 4;
                 color: white;
@@ -178,8 +177,8 @@ html{
                 z-index: 1;
                 width: 1000px;
                 height: 1025px;
-                top: 100.5%;
-                right: 30%;
+                top: 115%;
+                right: 10%;
                 margin-top: 10rem;
                 border-radius: 35%;
                 background: #979797bf;
@@ -194,21 +193,183 @@ html{
                 z-index: 4;
                 position: relative;
                 width: 100%;
-                height: 100vh;
                 background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .wlink{
+                    border-radius: 0.5rem;
+                    background-color: #ffffff6b;
+                    margin: 4rem 4rem 0 4rem;
+                    transition-delay: 0.25s;
+                    transition: 0.5s ease-in-out;
+                    padding: 2rem;
+                    @media (min-width: 475px) {
+                        min-width: 30rem;
+                    }
+                    @media (min-width: 992px) {
+                        min-width: 50rem;
+                    }
+                    &:hover{
+                        margin-left: 3.9rem;
+                        background-color: #ffffffab;
+                        box-shadow: 0.2rem 0.2rem 0rem #808080;
+                    }
+                    a{
+                        width: 100%;
+                        display: flex;
+                        color: #4e4e4e;
+                        text-decoration: none;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        text-align: center;
+                        img{
+                            align-self: center;
+                            margin-bottom: 0.5rem;
+                            height: 7.5rem;
+                            width: 7.5rem;
+                        }
+                    }
+                }
             }
             #contact-us{
                 padding-top: 5rem;
                 z-index: 4;
                 position: relative;
                 width: 100%;
-                height: 100vh;
+                height: 100%;
                 background-color: transparent;
+                #comment{
+                    border-radius: 0.5rem;
+                    background-color: #ffffff6b;
+                    margin: 2rem;
+                    color: #4e4e4e;
+                    transition-delay: 0.25s;
+                    transition: 0.5s ease-in-out;
+                    padding: 2rem;
+                    @media (min-width: 475px) {
+                        min-width: 30rem;
+                    }
+                    @media (min-width: 992px) {
+                        min-width: 50rem;
+                    }
+                    &:hover{
+                        margin-left: 1.9rem;
+                        background-color: #ffffffab;
+                        box-shadow: 0.2rem 0.2rem 0rem #808080;
+                    }
+                    form{
+                        height: 100%;
+                        width: 100%;
+                        fieldset{
+                            border: 0.2rem solid #969696;
+                            border-radius: 0.5rem;
+                            padding: 0.5rem;
+                            legend{
+                                width: 9ch;
+                                padding-left: 1ch;
+                                margin-left: 2ch;
+                            }
+                            input, textarea{
+                                outline: none;
+                            }
+                            .fill{
+                                width: 100%;
+                                height: 4rem;
+                                margin-bottom: 0.5rem;
+                                .enter{
+                                    margin-top: 1.5rem;
+                                    font-size: 1.5rem;
+                                    background: none;
+                                    width: 100%;
+                                    padding-left: 1rem;
+                                    color: #333333;
+                                    transition: 0.4s ease-in-out;
+                                    border: none;
+                                    border-bottom: 3px solid gray;
+                                    &:hover{
+                                        border-bottom: 3px solid #173e50;
+                                    }
+                                    &:focus{
+                                        border-bottom: 3px solid #173e50;
+                                    }
+                                    &:focus ~ label{
+                                        margin-top: -4rem;
+                                    }
+                                    &:valid{
+                                        border-bottom: 3px solid #173e50;
+                                    }
+                                    &:valid ~ label{
+                                        margin-top: -4rem;
+                                    }
+                                }
+                                .labl{
+                                    position: absolute;
+                                    margin-left: 0.25rem;
+                                    margin-top: -2rem;
+                                    transition: 0.4s ease-in-out;
+                                    color: #4e4e4e;
+                                }
+                                #rates{
+                                    margin-top: 1rem;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    flex-direction: row-reverse;
+                                }
+                                #rat{
+                                    position: absolute;
+                                    margin: 0.5rem 0 0 0.25rem;
+                                }
+                                input[type=radio]{
+                                    height: 0rem;
+                                    width: 0rem;
+                                    margin: 0 0 0 0.5rem;
+                                    &:checked ~ .rat{
+                                        color: goldenrod;
+                                    }
+                                    &:hover ~ .rat{
+                                        color: goldenrod;
+                                    }
+                                }
+                                .rat{
+                                    font-size: 2rem;
+                                    color: gray;
+                                    background-color: transparent;
+                                    transition: 0.4s ease-in-out;
+                                }
+                            }
+                            button {
+                                cursor: pointer;
+                                border-radius: 5px;
+                                text-align: center;
+                                padding: 0.5rem 1rem 0 1rem;
+                                text-decoration: none;
+                                color: #fff;
+                                position: relative;
+                                display: inline-block;
+                                outline: none;
+                                transition: 0.4s ease-in-out;
+                                border: none;
+                                background-color: #277092;
+                                &:active {
+                                    background-color: #2b90be;
+                                }
+                                &:hover {
+                                    background-color: #2b90be;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
         #about-us{
             width: 100%;
             height: 90vh;
+            z-index: 4;
             overflow: hidden;
             background-color: #0d242e;
             h1{
